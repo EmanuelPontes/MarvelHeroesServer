@@ -1,0 +1,22 @@
+
+
+<div class="container" style="min-height: 100vh;">
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="form-label mb-2">
+            <strong>Search for your Marvel Characters</strong> 
+            </label>
+            <input type="text" 
+            ng-model="heroName"  
+            ng-model-options="{ debounce: 300 }"   
+            ng-change="onKeyUp()"
+            placeholder="Search for character"
+            class="form-control">     
+        </div>
+        
+    </div>
+    <div class="row pt-5">
+        <heros-table heros="heros" on-detail="onDetail($event, id)"></heros-table>
+    </div>
+</div>
+
