@@ -13,7 +13,7 @@ main-header {
     grid-area: main-header !important;
     padding: 0 !important;
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
 }
 
 main-content {
